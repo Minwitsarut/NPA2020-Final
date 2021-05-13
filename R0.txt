@@ -1,0 +1,10 @@
+int l61070210
+ip add 192.168.1.1 255.255.255.0
+no shut
+line vty 0 4
+ip dns server
+ip domain-lookup
+ip name-server 8.8.8.8
+cdp run
+lldp run
+
