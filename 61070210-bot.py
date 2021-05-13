@@ -20,6 +20,8 @@ while True:
     }
     res = requests.get(url, headers=headers)
     result = res.json()
+    #message = message1 + '\n' + message2
+    # message = 'Hello' + str(lati_longi['lat'])
     messages = result["items"][0]["text"]
     print(messages)
     # up
