@@ -10,7 +10,6 @@ device_par = {'device_type': 'cisco_ios',
                   }
 
 with ConnectHandler(**device_par) as ssh:
-    """config loopback / ACL for ssh / CDP interface description"""
     file_config = 'R0.txt'
     config_sent = ssh.send_config_from_file(config_file=file_config)
     print(config_sent)
